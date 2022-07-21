@@ -10,7 +10,6 @@ import OMnie from './OMnie';
 function App() {
   const[write,setWrite]=useState('Logo')
   const[menu,setMenu]=useState()
-  console.log(menu)
   return (
     <div className="App">
       <header className="App-header">
