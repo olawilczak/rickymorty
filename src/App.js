@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Nawigacje from './Nawigacje';
+import { useState } from 'react';
+import ListaPostaci from './ListaPostaci';
+import Todo from './Todo';
+import Kontakt from './Kontakt';
+import OMnie from './OMnie';
 
 function App() {
+  const[write,setWrite]=useState('Logo')
+  const[menu,setMenu]=useState()
+  console.log(menu)
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +27,15 @@ function App() {
           Learn React
         </a>
       </header>
+      <Nawigacje logo={write}
+      changes={setMenu}
+      />
+      <OMnie
+      name = 'Ola'
+      lastName='Wilczak'
+      description='Cześć jestem Ola i mam 26 lat'
+      img = 'images/foto.jpg'
+      ></OMnie>
     </div>
   );
 }
