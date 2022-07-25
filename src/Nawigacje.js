@@ -16,7 +16,7 @@ const Nawigacje = ({logo,changes}) => {
             {isAvailable === 'OMnie' && <div>OMnie</div>}
             {isAvailable === 'ListaPostaci' && <div>ListaPostaci</div>}
             {isAvailable === 'Todo' && <div>Todo</div>}
-            {isAvailable === 'Kontakt' && <div>Kontakt</div>}
+            {isAvailable === 'Kontakt' && <div></div>}
 
         </div>
         <div>{logo}</div>
