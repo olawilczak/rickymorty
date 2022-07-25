@@ -1,14 +1,14 @@
 import React, {useState,useEffect} from 'react'
 
 
-const OMnie = ({name,lastName,description,img}) => {
+const OMnie = ({person}) => {
 
     return (
     <>
-    <img src={img} alt='Ola śpi'></img>
-    <h1>{name}</h1>
-    <h2>{lastName}</h2>
-    <p>{description}</p>
+    <img src={person.img} alt='Ola śpi'></img>
+    <h1>{person.name}</h1>
+    <h2>{person.lastName}</h2>
+    <p>{person.description}</p>
     </>
 )}
 
