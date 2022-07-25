@@ -21,12 +21,11 @@ function App() {
       <Nawigacje logo={write}
       changes={setMenu}
       />
-      <OMnie person = {data}></OMnie>
       <div>
-            {menu === 'OMnie' && <div>OMnie</div>}
-            {menu === 'ListaPostaci' && <div>ListaPostaci</div>}
-            {menu === 'Todo' && <div>Todo</div>}
-            {menu === 'Kontakt' && <div>Kontakt</div>}
+            {menu === 'OMnie' && <OMnie person={data}></OMnie>}
+            {menu === 'ListaPostaci' && <ListaPostaci></ListaPostaci>}
+            {menu === 'Todo' && <Todo></Todo>}
+            {menu === 'Kontakt' && <Kontakt></Kontakt>}
 
         </div>
     </div>
