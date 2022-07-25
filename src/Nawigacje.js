@@ -9,16 +9,8 @@ const Nawigacje = ({logo,changes}) => {
     const handleButtonClick = (dupa) => {
         changes(dupa)
     }
-    const isAvailable = 'OMnie'
     return (
         <>
-        <div>
-            {isAvailable === 'OMnie' && <div>OMnie</div>}
-            {isAvailable === 'ListaPostaci' && <div>ListaPostaci</div>}
-            {isAvailable === 'Todo' && <div>Todo</div>}
-            {isAvailable === 'Kontakt' && <div>Kontakt</div>}
-
-        </div>
         <div>{logo}</div>
  <div>
     {names.map((item)=>(
