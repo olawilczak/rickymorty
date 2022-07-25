@@ -9,7 +9,7 @@ import OMnie from './OMnie';
 
 function App() {
   const[write,setWrite]=useState('Logo')
-  const[menu,setMenu]=useState('OMnie')
+  const[menu,setMenu]=useState()
   const data = {
     name: 'Ola',
     lastName:'Wilczak',
