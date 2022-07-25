@@ -9,7 +9,7 @@ import OMnie from './OMnie';
 
 function App() {
   const[write,setWrite]=useState('Logo')
-  const[menu,setMenu]=useState()
+  const[menu,setMenu]=useState('OMnie')
   const data = {
     name: 'Ola',
     lastName:'Wilczak',
@@ -22,6 +22,13 @@ function App() {
       changes={setMenu}
       />
       <OMnie person = {data}></OMnie>
+      <div>
+            {menu === 'OMnie' && <div>OMnie</div>}
+            {menu === 'ListaPostaci' && <div>ListaPostaci</div>}
+            {menu === 'Todo' && <div>Todo</div>}
+            {menu === 'Kontakt' && <div>Kontakt</div>}
+
+        </div>
     </div>
   );
 }
