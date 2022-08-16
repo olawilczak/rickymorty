@@ -1,7 +1,7 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 
 
-const OMnie = ({person}) => {
+const AboutMe = ({person}) => {
 
     return (
     <>
@@ -16,4 +16,4 @@ const OMnie = ({person}) => {
 
 
 
-export default OMnie;
+export default AboutMe;

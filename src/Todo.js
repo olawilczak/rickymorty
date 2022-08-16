@@ -1,17 +1,7 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
 
 
 const Todo = (() => {
-    const Single = (()=>{
-        const newClick = () => {
-
-        }
-        return (
-            <>
-            <button onClick={newClick}></button>
-            </>
-        )
-    })
 
     const[data,setData]=useState([])
     const[text,setText]=useState()

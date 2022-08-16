@@ -1,6 +1,6 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
 
-const Kontakt = () => {
+const Contact = () => {
     const [state, setState] = useState([{ email: "", text: "" }]);
     const[text,setText]=useState()
 
@@ -44,4 +44,4 @@ const Kontakt = () => {
 
 
 
-export default Kontakt;
+export default Contact;

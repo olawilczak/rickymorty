@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 
-function ListaPostaci() {
+function CharacterList() {
     const [state, setState] = useState([])
     const getCharacters = async () => {
       try {
@@ -16,27 +16,14 @@ function ListaPostaci() {
       getCharacters()
     }, []);
 
-    const Gender = () => {
-      return (
-        <div>{state.map((a)=>{
-          return (<div>{a.gender}</div>)
-        })}</div>
-      )
-    }
-
-    const Name = () => {
-      return (
-        <div>{state.map((b)=>{
-        return (<div>{b.name}</div> )
-        })}</div>
-      )
-    }
-
-
     return (
         <>
-<div>{Gender}</div>
-<div>{Name}</div>
+<div>{state.map((a)=>{
+          return (<div>{a.gender}</div>)
+        })}</div>
+<div>{state.map((b)=>{
+        return (<div>{b.name}</div> )
+        })}</div>
         </>
     )
 }
@@ -45,4 +32,4 @@ function ListaPostaci() {
 
 
 
-export default ListaPostaci;
+export default CharacterList;

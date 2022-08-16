@@ -1,31 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Nawigacje from './Nawigacje';
+import Navigation from './Navigation';
 import { useState } from 'react';
-import ListaPostaci from './ListaPostaci';
+import CharacterList from './CharacterList';
 import Todo from './Todo';
-import Kontakt from './Kontakt';
-import OMnie from './OMnie';
+import Contact from './Contact';
+import AboutMe from './AboutMe';
+
+const DATA = {
+  name: 'Ola',
+  lastName:'Wilczak',
+  description:'Cześć jestem Ola i mam 26 lat',
+  img: 'images/foto.jpg'
+};
 
 function App() {
   const[write,setWrite]=useState('Logo')
   const[menu,setMenu]=useState()
-  const data = {
-    name: 'Ola',
-    lastName:'Wilczak',
-    description:'Cześć jestem Ola i mam 26 lat',
-    img: 'images/foto.jpg'
-  }
+  
   return (
     <div className="App">
-      <Nawigacje logo={write}
+      <Navigation logo={write}
       changes={setMenu}
       />
       <div>
-            {menu === 'OMnie' && <OMnie person={data}></OMnie>}
-            {menu === 'ListaPostaci' && <ListaPostaci></ListaPostaci>}
-            {menu === 'Todo' && <Todo></Todo>}
-            {menu === 'Kontakt' && <Kontakt></Kontakt>}
+            {menu === 'AboutMe' && <AboutMe person={DATA}></AboutMe>}
+            {menu === 'CharacterList' && <CharacterList/>}
+            {menu === 'Todo' && <Todo/>}
+            {menu === 'Contact' && <Contact/>}
 
         </div>
     </div>
